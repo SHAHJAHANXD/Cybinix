@@ -8,7 +8,7 @@
                             <a href="#"><img src="{{asset('cybinix')}}/assets/images/Cybinix/logo.PNG" height="70px" alt=""></a>
                         </div>
                         <div class="footer_content">
-                            <p>Lorem ipsum dolor sitco nsetetu nonumy eirmod tempor invidunt ut labore et dolore magna uyam erat, sed diam.</p>
+                            <p>The team of Cybinix developers, designers, and analysts in Cybinix promises your business a rise in sales and rapid growth in the market.</p>
                         </div>
                     </div>
                 </div>
@@ -36,9 +36,13 @@
                     <div class="footer_subscribe mt-50">
                         <h2 class="footer_title">Newsletter</h2>
                         <div class="subscribe_form text-right">
-                            <form action="#">
-                                <input type="text" placeholder="Enter email">
-                                <button class="main-btn">Subscribe</button>
+                            <form action="/newsletter" method="POST">
+                                @csrf
+                                <input type="text" name="email" placeholder="Enter email">
+                                @if ($errors->has('email'))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                            @endif
+                                <button class="main-btn buttooo">Subscribe</button>
                             </form>
                         </div>
                     </div>

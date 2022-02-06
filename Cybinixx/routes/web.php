@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [UserController::class, 'index'])->name('index');
+Route::post('/getintouch', [UserController::class, 'getintouch'])->name('getintouch');
+Route::post('/newsletter', [UserController::class, 'newsletter'])->name('newsletter');
 
 
 
