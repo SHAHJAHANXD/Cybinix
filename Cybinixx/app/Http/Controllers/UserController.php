@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\GetInTouch;
 use App\Models\NewsLetter;
+use App\Models\OurTeam;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
     public function index()
     {
-        return view('front.index');
+        $team = OurTeam::where('status', '1')->get();
+        return view('front.index', compact('team'));
     }
     public function getintouch(Request $request)
     {

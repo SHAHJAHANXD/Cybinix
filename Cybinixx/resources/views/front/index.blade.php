@@ -4,7 +4,7 @@
 @endsection
 @section('extra-heads')
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-
-                                                                    alpha/css/bootstrap.css" rel="stylesheet">
+                                                                            alpha/css/bootstrap.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
@@ -194,8 +194,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
-                    <div class="single_services text-center mt-30 wow  " data-wow-duration="0.5s"
-                        data-wow-delay="1.5s">
+                    <div class="single_services text-center mt-30 wow  " data-wow-duration="0.5s" data-wow-delay="1.5s">
                         <div class="services_icon">
                             <i class="lni lni-mobile"></i>
                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
@@ -219,8 +218,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <div class="single_services text-center mt-30 wow  " data-wow-duration="0.5s"
-                        data-wow-delay="0.5s">
+                    <div class="single_services text-center mt-30 wow  " data-wow-duration="0.5s" data-wow-delay="0.5s">
                         <div class="services_icon">
                             <i class="lni lni-layout"></i>
                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
@@ -230,7 +228,8 @@
                         </div>
                         <div class="services_content">
                             <h3 class="services_title"><a href="#">Web Development</a></h3>
-                            <p>We create an amazing digital experience for Startups, Small & Medium-size Businesses from ideation to the final execution with the fine clarity from our expertise.</p>
+                            <p>We create an amazing digital experience for Startups, Small & Medium-size Businesses from
+                                ideation to the final execution with the fine clarity from our expertise.</p>
                             <ul class="text-gray-2 d-none d-sm-block content">
                                 <li><b>◉ Laravel Development</b></li>
                                 <li><b>◉ SaaS Apps Development Services</b></li>
@@ -253,7 +252,8 @@
                         </div>
                         <div class="services_content">
                             <h3 class="services_title"><a href="#">Digital Marketing</a></h3>
-                            <p>Grow your brand visibility and increase your website traffic with our best digital marketing services focused on higher search engine rankings for your growing business.</p>
+                            <p>Grow your brand visibility and increase your website traffic with our best digital marketing
+                                services focused on higher search engine rankings for your growing business.</p>
                             <ul class="text-gray-2 d-none d-sm-block content">
                                 <li><b>◉ SEO for Globalization & Localization</b></li>
                                 <li><b>◉ SEO for E-Commerce</b></li>
@@ -267,8 +267,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6">
-                    <div class="single_services text-center mt-30 wow" data-wow-duration="0.5s"
-                        data-wow-delay="0.5s">
+                    <div class="single_services text-center mt-30 wow" data-wow-duration="0.5s" data-wow-delay="0.5s">
                         <div class="services_icon">
                             <i class="lni lni-layout"></i>
                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
@@ -278,7 +277,8 @@
                         </div>
                         <div class="services_content">
                             <h3 class="services_title"><a href="#">Web Design</a></h3>
-                            <p>We create an amazing digital experience for Startups, Small & Medium-size Businesses from ideation to the final execution.</p>
+                            <p>We create an amazing digital experience for Startups, Small & Medium-size Businesses from
+                                ideation to the final execution.</p>
                             <ul class="text-gray-2 d-none d-sm-block content">
                                 <li><b>◉ Corporate Website designing</b></li>
                                 <li><b>◉ Responsive Web Designing</b></li>
@@ -301,7 +301,8 @@
                         </div>
                         <div class="services_content">
                             <h3 class="services_title"><a href="#">Graphic Design</a></h3>
-                            <p>We create alluring and appealing designs, that help you stand out from the huddle and effectively market your products and services. </p>
+                            <p>We create alluring and appealing designs, that help you stand out from the huddle and
+                                effectively market your products and services. </p>
                             <ul class="text-gray-2 d-none d-sm-block content">
                                 <li><b>◉ Branding & Identity</b></li>
                                 <li><b>◉ Logo & Signage Design</b></li>
@@ -314,8 +315,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <div class="single_services text-center mt-30 wow  " data-wow-duration="0.5s"
-                        data-wow-delay="1.5s">
+                    <div class="single_services text-center mt-30 wow  " data-wow-duration="0.5s" data-wow-delay="1.5s">
                         <div class="services_icon">
                             <i class="lni lni-briefcase"></i>
                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
@@ -325,7 +325,8 @@
                         </div>
                         <div class="services_content">
                             <h3 class="services_title"><a href="#">Quality Assurance</a></h3>
-                            <p>Leave your QA process to our professional team and ensure your final product will delight your customer’s assumption with high-quality.  </p>
+                            <p>Leave your QA process to our professional team and ensure your final product will delight
+                                your customer’s assumption with high-quality. </p>
                             <ul class="text-gray-2 d-none d-sm-block content">
                                 <li><b>◉ QA Consulting</b></li>
                                 <li><b>◉ Quality Assessment</b></li>
@@ -442,7 +443,7 @@
         </div>
     </section>
 
-    <section id="pricing" class="pricing_area pt-115 pb-120">
+    {{-- <section id="pricing" class="pricing_area pt-115 pb-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -599,7 +600,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section id="team" class="team_area pt-115 pb-120">
         <div class="container">
@@ -612,127 +613,21 @@
                 </div>
             </div>
             <div class="row team_active wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="{{ asset('developers/SHAHJAHAN.jpg') }}" height="350px" alt="team">
+                @isset($team)
+                    @foreach ($team as $teams)
+                        <div class="col-lg-4">
+                            <div class="single_team">
+                                <div class="team_image">
+                                    <img src="{{ asset('/images/' . $teams->Image) }}" height="350px" alt="team">
+                                </div>
+                                <div class="team_content">
+                                    <h4 class="team_name"><a href="">{{ $teams->name }}</a></h4>
+                                    <p>{{ $teams->designation }}</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Shahjahan</a></h4>
-                            <p>Founder and CEO / Laravel Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="{{ asset('developers/Ahsan Ali Rehmani.jpg') }}" height="350px" alt="team">
-                        </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Ahsan Ali Rehmani</a></h4>
-                            <p>Co-Founder / Laravel Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="{{ asset('developers/Aniqa Mayal.jpeg') }}" height="350px" alt="team">
-                        </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Aniqa Muti Ur Rasool</a></h4>
-                            <p>React Native Developer</p>
-                        </div>
-                    </div>
-                </div>
-                {{-- <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="https://preview.uideck.com/items/plain/assets/images/team-2.jpg" alt="team">
-                        </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Rabia Asghar</a></h4>
-                            <p>React Native Developer</p>
-                        </div>
-                    </div>
-                </div> --}}
-                <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="{{ asset('developers/Zain.jpeg') }}" alt="team">
-                        </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Zain</a></h4>
-                            <p>Digital Marketing Expert</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="{{ asset('developers/Amir Faisal.jpeg') }}" alt="team">
-                        </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Amir Faisal</a></h4>
-                            <p>Flutter Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="{{ asset('developers/Kashif.jpeg') }}" alt="team">
-                        </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Kashif Khan</a></h4>
-                            <p>Laravel Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="{{ asset('developers/Mushaib.jpeg') }}" alt="team">
-                        </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Mushaib</a></h4>
-                            <p>Laravel Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="{{ asset('developers/Umair.jpeg') }}" alt="team">
-                        </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Umair Hassan</a></h4>
-                            <p>React Native Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="{{ asset('developers/Usama Aleem.jpeg') }}" alt="team">
-                        </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Usama Aleem</a></h4>
-                            <p>Laravel Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single_team">
-                        <div class="team_image">
-                            <img src="{{ asset('developers/Huzaifa.jpeg') }}" alt="team">
-                        </div>
-                        <div class="team_content">
-                            <h4 class="team_name"><a href="#">Huzaifa</a></h4>
-                            <p>Laravel Developer</p>
-                        </div>
-                    </div>
-                </div>
+                    @endforeach
+                @endisset
             </div>
         </div>
     </section>
@@ -860,6 +755,17 @@
 
 @endsection
 @section('extra-scripts')
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCCMJ7CW4B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KCCMJ7CW4B');
+    </script>
     <script>
         @if (Session::has('success'))
             toastr.options =

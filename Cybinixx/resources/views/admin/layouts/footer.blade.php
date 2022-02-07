@@ -1,1 +1,1 @@
-<footer class="footer">© 2019 Annex by Mannatthemes.</footer>
+<footer class="footer">© 2022 By Cybinix.</footer>

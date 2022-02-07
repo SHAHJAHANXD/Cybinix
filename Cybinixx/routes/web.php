@@ -24,19 +24,27 @@ Route::post('/newsletter', [UserController::class, 'newsletter'])->name('newslet
 
 
 
-
-
 Route::group(['middleware' => 'auth:admin'], function () {
     Route::prefix('admin')->group(function () {
         Route::get('/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
-        Route::get('/all-users', [AdminController::class, 'users'])->name('admin.users');
-        Route::get('/individual-users', [AdminController::class, 'individualusers'])->name('admin.individual.users');
-        Route::get('/company-users', [AdminController::class, 'companyusers'])->name('admin.company.users');
-
+        Route::get('/all-team', [AdminController::class, 'users'])->name('admin.team');
+        Route::get('/all-active-team', [AdminController::class, 'activeteam'])->name('admin.active.team');
+        Route::get('/delete-team-member/{id}', [AdminController::class, 'delete'])->name('admin.delete.team');
+        Route::get('/all-blocked-team', [AdminController::class, 'blockedteam'])->name('admin.blocked.team');
+        Route::get('/add-new-team-member', [AdminController::class, 'teammember'])->name('admin.add.team');
+        Route::post('/save-new-team-member', [AdminController::class, 'savemember'])->name('admin.save.team');
         Route::get('/logout', [AdminController::class, 'logout'])->name('admin.logout');
         Route::get('/profile', [AdminController::class, 'profile'])->name('admin.profile');
+        Route::get('/get-in-touch-messages', [AdminController::class, 'messages'])->name('admin.messages');
+        Route::get('/news-letter-emails', [AdminController::class, 'NewsLetter'])->name('admin.NewsLetter');
+
+
     });
 });
 
+Route::get('/team-status-active/{id}', [AdminController::class, 'status1'])->name('active');
+Route::get('/team-status-block/{id}', [AdminController::class, 'status0'])->name('block');
+
 Route::post('/admin/authenticate', [AdminController::class, 'authenticate']);
 Route::get('/admin/login', [AdminController::class, 'signin'])->name('admin.login');
+

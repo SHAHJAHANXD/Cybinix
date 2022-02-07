@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Admin;
 use App\Models\Company;
+use App\Models\GetInTouch;
+use App\Models\NewsLetter;
+use App\Models\OurTeam;
 use App\Models\Profile;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -29,14 +32,53 @@ class AdminController extends Controller
     }
     public function users()
     {
-        $user = User::get();
-        return view('admin.users.users', compact('user'));
+        $user = OurTeam::get();
+        return view('admin.team.users', compact('user'));
+    }
+    public function activeteam()
+    {
+        $user = OurTeam::where('status', '1')->get();
+        return view('admin.team.users', compact('user'));
+    }
+    public function blockedteam()
+    {
+        $user = OurTeam::where('status', '0')->get();
+        return view('admin.team.users', compact('user'));
+    }
+    public function messages()
+    {
+        $message = GetInTouch::get();
+        return view('admin.getintouch', compact('message'));
+    }
+    public function NewsLetter()
+    {
+        $message = NewsLetter::get();
+        return view('admin.NewsLetter', compact('message'));
     }
 
-
-    public function profile()
+    public function teammember()
     {
-        return view('admin.auth.profile');
+        return view('admin.team.storeteam');
+    }
+    public function savemember(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|max:35',
+            'designation' => 'required|max:250',
+            'Image' => 'mimes:jpeg,jpg,png,gif|required|max:3072',
+
+        ]);
+
+        $user = new OurTeam();
+        if ($request->hasfile('Image')) {
+            $imageName = time() . '.' . $request->Image->extension();
+            $user->Image = $imageName;
+            $request->Image->move(public_path('images'), $imageName);
+        }
+        $user->name = $request->name;
+        $user->designation = $request->designation;
+        $user->save();
+        return redirect()->back()->with('success', 'Team Member Added Successfully!');
     }
 
     public function logout()
@@ -80,7 +122,7 @@ class AdminController extends Controller
     {
         $update_id = $request->id;
         if (isset($update_id) && $update_id > 0) {
-            $userr = User::find($update_id);
+            $userr = OurTeam::find($update_id);
             $userr->status = 0;
             $userr->save();
             return redirect()->back()->with('message', 'Status Updated Successfully!');
@@ -90,7 +132,7 @@ class AdminController extends Controller
     {
         $update_id = $request->id;
         if (isset($update_id) && $update_id > 0) {
-            $userr = User::find($update_id);
+            $userr = OurTeam::find($update_id);
             $userr->status = 1;
             $userr->save();
             return redirect()->back()->with('message', 'Status Updated Successfully!');
@@ -115,5 +157,11 @@ class AdminController extends Controller
             $userr->save();
             return redirect()->back()->with('message', 'Status Updated Successfully!');
         }
+    }
+    public function delete($id)
+    {
+        $company = OurTeam::find($id);
+        $company->delete();
+        return redirect()->back()->with('success', 'Member Deleted Successfully!');
     }
 }
